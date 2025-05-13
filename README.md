@@ -128,3 +128,33 @@ public class Desafio9 {
 ```
 # Questao 7
 ```java
+package desafio9;
+
+import java.util.Scanner;
+public class Desafio9 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int[] nota = new int[10];
+        int i, soma = 0, media;
+        for (i = 0; i < nota.length; i++) {
+            System.out.println("Digite a nota:" + (i + 1) + ":");
+            nota[i] = ler.nextInt();
+            soma += nota[i];
+        }
+
+        media = soma / nota.length;
+        System.out.println("\nMedia das notas:" + media);
+
+        System.out.println("As notas maiores que a media é");
+        for (i = 0; i < nota.length; i++) {
+            if (nota[i] > media) {
+                System.out.println("nota " + (i + 1) + ":" + nota[i]);
+            }
+        }
+    }
+
+}
+```
+# Questao 8
+```java
