@@ -158,3 +158,74 @@ public class Desafio9 {
 ```
 # Questao 8
 ```java
+public class desafio9 {
+    public static void main(String[] args) {
+       
+        int[] vetor = {3, 5, 7, 5, 2, 5, 1, 8, 5, 4};
+        int contador = 0;
+        int i = 0;
+        while (i < 10) {
+            if (vetor[i] == 5) {
+                contador++;
+            }
+            i++;
+        }
+        System.out.println("O número 5 aparece " + contador + " vezes no vetor.");
+    }
+}
+```
+# Questao 9
+```java
+public class desafio9 {
+    public static void main(String[] args) {
+        
+        int[] vetor = {3, 7, 9, 2, 6, 10, 12, 4, 15, 8};
+        int[] multiplos = new int[10]; 
+        int i = 0;
+        int j = 0;
+
+        while (i < 10) {
+            if (vetor[i] % 3 == 0) {
+                multiplos[j] = vetor[i];
+                j++;
+            }
+            i++;
+        }
+
+       
+        System.out.println("Valores múltiplos de 3:");
+        i = 0;
+        while (i < j) {
+            System.out.println(multiplos[i]);
+            i++;
+        }
+    }
+}
+```
+# Questao 10
+```java
+public class desafio8 {
+    public static void main(String[] args) {
+        
+        int[] A = {5, 8, 2, 9, 1, 4, 7, 6, 3, 0};
+        int[] B = {3, 6, 9, 2, 5, 8, 1, 7, 4, 10};
+        int[] C = new int[10];
+        int i = 0;
+
+        while (i < 10) {
+            if (A[i] > B[i]) {
+                C[i] = A[i];
+            } else {
+                C[i] = B[i];
+            }
+            i++;
+        }
+
+        System.out.println("Vetor C com os maiores valores entre A e B:");
+        i = 0;
+        while (i < 10) {
+            System.out.println(C[i]);
+            i++;
+        }
+    }
+}
